@@ -34,9 +34,9 @@ d.call()
 - `call` Call debouncer to start the callback after the delayed time. Multiple calls will ignore the older calls and overwrite the firing time
 
 
-### Installation
+## Installation
 
-#### CocoaPods
+### CocoaPods
 
 You can install [the library](https://cocoapods.org/pods/SwiftDebouncer) to your project by using [CocoaPods](https://cocoapods.org). Add the following code to your `Podfile`:
 ```
@@ -48,16 +48,15 @@ pod 'SwiftDebouncer'
 end
 ```
 
-#### Git Submodule
+### Git Submodule
 
 You can add the project as a git `submodule`. Simply drag the `SwiftGS1Barcode.xcodeproj` file into your Xcode project.
 **Don't forget to add the framework in your application target**
 
-#### Manually
+### Manually
 
 Just copy and paste the [`Debouncer.swift`](https://github.com/xremix/SwiftDebouncer/blob/master/SwiftDebouncer/Debouncer.swift) file into your project.
 
-### First Steps
 
 ## Ressources
 
