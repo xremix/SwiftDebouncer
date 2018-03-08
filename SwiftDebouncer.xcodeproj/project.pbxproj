@@ -10,6 +10,7 @@
 		640FAD7F20513E84006620B0 /* SwiftDebouncer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 640FAD7520513E84006620B0 /* SwiftDebouncer.framework */; };
 		640FAD8420513E84006620B0 /* SwiftDebouncerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640FAD8320513E84006620B0 /* SwiftDebouncerTests.swift */; };
 		640FAD8620513E84006620B0 /* SwiftDebouncer.h in Headers */ = {isa = PBXBuildFile; fileRef = 640FAD7820513E84006620B0 /* SwiftDebouncer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		640FAD9020513F2F006620B0 /* SwiftDebouncer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640FAD8F20513F2F006620B0 /* SwiftDebouncer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		640FAD7E20513E84006620B0 /* SwiftDebouncerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftDebouncerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		640FAD8320513E84006620B0 /* SwiftDebouncerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDebouncerTests.swift; sourceTree = "<group>"; };
 		640FAD8520513E84006620B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		640FAD8F20513F2F006620B0 /* SwiftDebouncer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDebouncer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				640FAD7820513E84006620B0 /* SwiftDebouncer.h */,
 				640FAD7920513E84006620B0 /* Info.plist */,
+				640FAD8F20513F2F006620B0 /* SwiftDebouncer.swift */,
 			);
 			path = SwiftDebouncer;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					640FAD7420513E84006620B0 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					640FAD7D20513E84006620B0 = {
@@ -196,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				640FAD9020513F2F006620B0 /* SwiftDebouncer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +339,7 @@
 		640FAD8A20513E84006620B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -347,6 +353,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = de.xremix.SwiftDebouncer;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -355,6 +362,7 @@
 		640FAD8B20513E84006620B0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -376,6 +384,7 @@
 		640FAD8D20513E84006620B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T564M5W3X3;
 				INFOPLIST_FILE = SwiftDebouncerTests/Info.plist;
@@ -390,6 +399,7 @@
 		640FAD8E20513E84006620B0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T564M5W3X3;
 				INFOPLIST_FILE = SwiftDebouncerTests/Info.plist;
