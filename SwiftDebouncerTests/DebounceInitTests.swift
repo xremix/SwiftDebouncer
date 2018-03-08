@@ -15,6 +15,7 @@ class DebounceInitTests: XCTestCase {
     func testDebounceInitWithDelay(){
         let delayInMs: TimeInterval = 10
         let d = Debouncer(delay: 10)
+        
         XCTAssertNotNil(d)
         XCTAssertEqual(d.delay, delayInMs)
     }
@@ -34,6 +35,7 @@ class DebounceInitTests: XCTestCase {
         }
         let ms: TimeInterval = 10
         let d = Debouncer(delay: 10, callback: callback)
+        
         XCTAssertNotNil(d)
         XCTAssertEqual(d.delay, ms)
         XCTAssertNotNil(d.callback)

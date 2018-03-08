@@ -23,6 +23,16 @@ d.callback = {
 d.call()
 ```
 
+###  Properties
+
+- `callback` Callback that is getting called when the timer fires
+- `delay` Delay Time in ms
+- `fireDate` Next Date when the Debouncer will fire
+
+### Functions
+- `call` Call debouncer to start the callback after the delayed time. Multiple calls will ignore the older calls and overwrite the firing time
+
+
 ### Installation
 
 #### CocoaPods
@@ -44,7 +54,7 @@ You can add the project as a git `submodule`. Simply drag the `SwiftGS1Barcode.x
 
 #### Manually
 
-Just copy and paste the `[Debouncer.swift](https://github.com/xremix/SwiftDebouncer/blob/0.0.2/SwiftDebouncer/Debouncer.swift)` file into your project.
+Just copy and paste the [`Debouncer.swift`](https://github.com/xremix/SwiftDebouncer/blob/master/SwiftDebouncer/Debouncer.swift) file into your project.
 
 ### First Steps
 
