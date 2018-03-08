@@ -12,6 +12,8 @@
 		640FAD8620513E84006620B0 /* SwiftDebouncer.h in Headers */ = {isa = PBXBuildFile; fileRef = 640FAD7820513E84006620B0 /* SwiftDebouncer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		640FAD9020513F2F006620B0 /* SwiftDebouncer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640FAD8F20513F2F006620B0 /* SwiftDebouncer.swift */; };
 		640FAD92205140E0006620B0 /* SwiftDebouncer.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 640FAD91205140E0006620B0 /* SwiftDebouncer.podspec */; };
+		640FAD942051428E006620B0 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 640FAD932051428E006620B0 /* README.md */; };
+		640FAD9620514295006620B0 /* Deployment.md in Resources */ = {isa = PBXBuildFile; fileRef = 640FAD9520514295006620B0 /* Deployment.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +35,8 @@
 		640FAD8520513E84006620B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		640FAD8F20513F2F006620B0 /* SwiftDebouncer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDebouncer.swift; sourceTree = "<group>"; };
 		640FAD91205140E0006620B0 /* SwiftDebouncer.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SwiftDebouncer.podspec; sourceTree = "<group>"; };
+		640FAD932051428E006620B0 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		640FAD9520514295006620B0 /* Deployment.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Deployment.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +61,8 @@
 		640FAD6B20513E84006620B0 = {
 			isa = PBXGroup;
 			children = (
+				640FAD9520514295006620B0 /* Deployment.md */,
+				640FAD932051428E006620B0 /* README.md */,
 				640FAD91205140E0006620B0 /* SwiftDebouncer.podspec */,
 				640FAD7720513E84006620B0 /* SwiftDebouncer */,
 				640FAD8220513E84006620B0 /* SwiftDebouncerTests */,
@@ -186,7 +192,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				640FAD942051428E006620B0 /* README.md in Resources */,
 				640FAD92205140E0006620B0 /* SwiftDebouncer.podspec in Resources */,
+				640FAD9620514295006620B0 /* Deployment.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
