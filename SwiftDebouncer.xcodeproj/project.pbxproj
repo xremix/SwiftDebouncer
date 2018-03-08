@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		640FAD7F20513E84006620B0 /* SwiftDebouncer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 640FAD7520513E84006620B0 /* SwiftDebouncer.framework */; };
-		640FAD8420513E84006620B0 /* SwiftDebouncerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640FAD8320513E84006620B0 /* SwiftDebouncerTests.swift */; };
 		640FAD8620513E84006620B0 /* SwiftDebouncer.h in Headers */ = {isa = PBXBuildFile; fileRef = 640FAD7820513E84006620B0 /* SwiftDebouncer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		640FAD9020513F2F006620B0 /* Debouncer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640FAD8F20513F2F006620B0 /* Debouncer.swift */; };
 		640FAD92205140E0006620B0 /* SwiftDebouncer.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 640FAD91205140E0006620B0 /* SwiftDebouncer.podspec */; };
 		640FAD942051428E006620B0 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 640FAD932051428E006620B0 /* README.md */; };
 		640FAD9620514295006620B0 /* Deployment.md in Resources */ = {isa = PBXBuildFile; fileRef = 640FAD9520514295006620B0 /* Deployment.md */; };
+		640FAD98205145B2006620B0 /* DebounceInitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640FAD97205145B2006620B0 /* DebounceInitTests.swift */; };
+		640FAD9A20514856006620B0 /* DebounceCallTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640FAD9920514856006620B0 /* DebounceCallTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,12 +32,13 @@
 		640FAD7820513E84006620B0 /* SwiftDebouncer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftDebouncer.h; sourceTree = "<group>"; };
 		640FAD7920513E84006620B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		640FAD7E20513E84006620B0 /* SwiftDebouncerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftDebouncerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		640FAD8320513E84006620B0 /* SwiftDebouncerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDebouncerTests.swift; sourceTree = "<group>"; };
 		640FAD8520513E84006620B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		640FAD8F20513F2F006620B0 /* Debouncer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Debouncer.swift; sourceTree = "<group>"; };
 		640FAD91205140E0006620B0 /* SwiftDebouncer.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SwiftDebouncer.podspec; sourceTree = "<group>"; };
 		640FAD932051428E006620B0 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		640FAD9520514295006620B0 /* Deployment.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Deployment.md; sourceTree = "<group>"; };
+		640FAD97205145B2006620B0 /* DebounceInitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebounceInitTests.swift; sourceTree = "<group>"; };
+		640FAD9920514856006620B0 /* DebounceCallTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebounceCallTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,8 +94,9 @@
 		640FAD8220513E84006620B0 /* SwiftDebouncerTests */ = {
 			isa = PBXGroup;
 			children = (
-				640FAD8320513E84006620B0 /* SwiftDebouncerTests.swift */,
 				640FAD8520513E84006620B0 /* Info.plist */,
+				640FAD97205145B2006620B0 /* DebounceInitTests.swift */,
+				640FAD9920514856006620B0 /* DebounceCallTests.swift */,
 			);
 			path = SwiftDebouncerTests;
 			sourceTree = "<group>";
@@ -220,7 +223,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				640FAD8420513E84006620B0 /* SwiftDebouncerTests.swift in Sources */,
+				640FAD9A20514856006620B0 /* DebounceCallTests.swift in Sources */,
+				640FAD98205145B2006620B0 /* DebounceInitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
