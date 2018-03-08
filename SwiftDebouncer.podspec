@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name             = 'SwiftDebouncer'
   s.version          = '0.1.1'
-  s.summary          = 'Swift Debouncer Library to delay function calls'
+  s.summary          = 'A simple Swift Library for a Debouncer class to delay function calls'
  
   s.description      = <<-DESC
 Swift Debouncer Library to delay function calls and not have them called multiple times at once

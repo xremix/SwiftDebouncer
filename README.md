@@ -1,5 +1,5 @@
 # SwiftDebouncer
-Swift Debouncer library
+A simple Swift Library for a Debouncer class to delay function calls
 
 [![Badge w/ Version](https://cocoapod-badges.herokuapp.com/v/SwiftDebouncer/badge.png)](https://cocoadocs.org/docsets/SwiftDebouncer)
 [![Language](https://img.shields.io/badge/language-swift%204-1b7cb9.svg)](https://img.shields.io/badge/language-swift%204-1b7cb9.svg)
@@ -12,17 +12,20 @@ The Debouncer will delay a function call, and every time it's getting called it 
 
 ## Getting started
 
-Use the following code to instantiate a debouncer.
-You can pass a parameter `delay` (in `ms` of type TimerInterval) and optional an callback function.
+Usage is as simple as the following code:
 
 ```SWIFT
-let debouncer = Debouncer(delay: 10)
+let d = Debouncer(delay: 10)
 d.callback = {
 // your code here
 }
 
 d.call()
 ```
+
+You can pass a parameter `delay` (in `ms` of type TimerInterval) and optional an callback function.
+
+Make sure to check out the [Unit Tests](https://github.com/xremix/SwiftDebouncer/tree/master/SwiftDebouncerTests) for further code samples.
 
 ###  Properties
 
@@ -58,11 +61,12 @@ You can add the project as a git `submodule`. Simply drag the `SwiftGS1Barcode.x
 Just copy and paste the [`Debouncer.swift`](https://github.com/xremix/SwiftDebouncer/blob/master/SwiftDebouncer/Debouncer.swift) file into your project.
 
 
-## Ressources
-
-#### CocoaPod
-https://www.appcoda.com/cocoapods-making-guide/
-
 
 ![Analytics](https://ga-beacon.appspot.com/UA-40522413-9/SwiftDebouncer/readme?pixel)
 
+## About this
+
+- This was developed to not copy over and over the same classes due different projects
+- Test coverage should be pretty good - was developed using TDD
+- Oriented on [this](https://www.appcoda.com/cocoapods-making-guide/) article on how to deploy this on CocoaPods
+- Contributors are very welcome

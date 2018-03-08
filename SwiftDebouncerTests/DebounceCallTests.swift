@@ -33,6 +33,19 @@ class DebounceCallTests: XCTestCase {
         
         self.wait(for: [e], timeout: 1)
     }
+    
+    func testRunOnceImmediatlyDifferentSyntax(){
+        let e = expectation(description: "Run once and call immediatly")
+        
+        let d = Debouncer(delay: 0){
+            e.fulfill()
+        }
+        
+        d.call()
+        
+        self.wait(for: [e], timeout: 1)
+    }
+    
     func testRunOnceDelayed(){
         let e = expectation(description: "write some descriptive expectation :)")
         
