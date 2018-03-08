@@ -6,7 +6,8 @@ Swift Debouncer library
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/xremix/SwiftDebouncer/blob/master/LICENSE)
 
 ## Description
-`tbd`
+A Swift Library for a debounce function, similar to the JavaScript debounce.
+The Debouncer will delay a function call, and every time it's getting called it will delay the preceding call until the delay time is over.
 
 ## Getting started
 
