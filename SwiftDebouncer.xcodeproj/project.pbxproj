@@ -11,6 +11,7 @@
 		640FAD8420513E84006620B0 /* SwiftDebouncerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640FAD8320513E84006620B0 /* SwiftDebouncerTests.swift */; };
 		640FAD8620513E84006620B0 /* SwiftDebouncer.h in Headers */ = {isa = PBXBuildFile; fileRef = 640FAD7820513E84006620B0 /* SwiftDebouncer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		640FAD9020513F2F006620B0 /* SwiftDebouncer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640FAD8F20513F2F006620B0 /* SwiftDebouncer.swift */; };
+		640FAD92205140E0006620B0 /* SwiftDebouncer.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 640FAD91205140E0006620B0 /* SwiftDebouncer.podspec */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +32,7 @@
 		640FAD8320513E84006620B0 /* SwiftDebouncerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDebouncerTests.swift; sourceTree = "<group>"; };
 		640FAD8520513E84006620B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		640FAD8F20513F2F006620B0 /* SwiftDebouncer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDebouncer.swift; sourceTree = "<group>"; };
+		640FAD91205140E0006620B0 /* SwiftDebouncer.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SwiftDebouncer.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 		640FAD6B20513E84006620B0 = {
 			isa = PBXGroup;
 			children = (
+				640FAD91205140E0006620B0 /* SwiftDebouncer.podspec */,
 				640FAD7720513E84006620B0 /* SwiftDebouncer */,
 				640FAD8220513E84006620B0 /* SwiftDebouncerTests */,
 				640FAD7620513E84006620B0 /* Products */,
@@ -183,6 +186,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				640FAD92205140E0006620B0 /* SwiftDebouncer.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,6 +353,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = SwiftDebouncer/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = de.xremix.SwiftDebouncer;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -372,6 +377,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = SwiftDebouncer/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = de.xremix.SwiftDebouncer;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
