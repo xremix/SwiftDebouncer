@@ -8,6 +8,6 @@
 
 import UIKit
 
-class SwiftDebouncer: NSObject {
+public class Debouncer: NSObject {
 
 }
