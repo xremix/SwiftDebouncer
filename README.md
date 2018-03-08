@@ -54,7 +54,7 @@ You can add the project as a git `submodule`. Simply drag the `SwiftGS1Barcode.x
 
 #### Manually
 
-Just copy and paste the [`Debouncer.swift`](https://github.com/xremix/SwiftDebouncer/blob/0.0.2/SwiftDebouncer/Debouncer.swift) file into your project.
+Just copy and paste the [`Debouncer.swift`](https://github.com/xremix/SwiftDebouncer/blob/master/SwiftDebouncer/Debouncer.swift) file into your project.
 
 ### First Steps
 
