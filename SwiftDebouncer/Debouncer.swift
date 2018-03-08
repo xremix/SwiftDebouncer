@@ -17,8 +17,16 @@ public class Debouncer: NSObject {
     /** Delay Time in ms */
     let delay: TimeInterval
     
+    /** Next Date when the Debouncer will fire */
+    var fireDate: Date?{
+        get{
+            return timer?.fireDate
+        }
+    }
+    
     /** Timer to fire the callback event */
     private var timer: Timer?
+    
     
     /** Init with delay time as argument */
     init(delay: TimeInterval){
@@ -33,14 +41,14 @@ public class Debouncer: NSObject {
     
     /** Call debouncer to start the callback after the delayed time. Multiple calls will ignore the older calls and overwrite the firing time */
     func call(){
-        // Cancle timer, if one already exists
+        // Cancle timer, if already running
         timer?.invalidate()
         // Reset timer to fire next event
-        timer = Timer.scheduledTimer(timeInterval: delay, target: self, selector: #selector(timerCalled), userInfo: nil, repeats: false)
+        timer = Timer.scheduledTimer(timeInterval: delay, target: self, selector: #selector(fireCallback), userInfo: nil, repeats: false)
     }
     
     /** Function to fire the fallback, if it was set */
-    @objc private func timerCalled(_ timer: Timer) {
+    @objc private func fireCallback(_ timer: Timer) {
         if callback == nil {
             NSLog("Debouncer timer fired, but callback was not set")
         }

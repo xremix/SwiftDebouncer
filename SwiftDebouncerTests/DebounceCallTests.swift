@@ -134,4 +134,20 @@ class DebounceCallTests: XCTestCase {
         self.wait(for: [e], timeout: 2)
     }
     
+    func testFireTimeNoCall(){
+        let d = Debouncer(delay: 1000)
+        
+        XCTAssertEqual(d.fireDate, nil)
+    }
+    func testFireTime(){
+        let d = Debouncer(delay: 1000)
+        d.call()
+        
+        XCTAssertNotNil(d.fireDate)
+        // Equal comparison is not working because of the time difference when the code is getting called
+        // The numbers might get changed on a slow computer testing this
+        XCTAssertGreaterThan(d.fireDate!, Date(timeInterval: 998, since: Date()))
+        XCTAssertLessThan(d.fireDate!, Date(timeInterval: 1002, since: Date()))
+    }
+    
 }
