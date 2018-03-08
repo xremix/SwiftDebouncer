@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'SwiftDebouncer'
-  s.version          = '0.0.2'
+  s.version          = '0.1.0'
   s.summary          = 'Swift Debouncer Library to delay function calls'
  
   s.description      = <<-DESC
