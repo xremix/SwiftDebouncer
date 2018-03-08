@@ -12,6 +12,15 @@ import XCTest
 
 class DebounceCallTests: XCTestCase {
     
+    
+    func testCallWithoutCallback(){
+        
+        let d = Debouncer(delay: 0)
+        
+        d.call()
+        XCTAssertTrue(true)
+    }
+    
     func testRunOnceImmediatly(){
         let e = expectation(description: "Run once and call immediatly")
         

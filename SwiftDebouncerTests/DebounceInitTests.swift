@@ -18,6 +18,7 @@ class DebounceInitTests: XCTestCase {
         XCTAssertNotNil(d)
         XCTAssertEqual(d.delay, delayInMs)
     }
+    
     func testDebounceInitWithDouble(){
         let delayInMsAsDouble: Double = 10
         let d = Debouncer(delay: delayInMsAsDouble)
