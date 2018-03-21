@@ -53,7 +53,7 @@ end
 
 ### Git Submodule
 
-You can add the project as a git `submodule`. Simply drag the `SwiftGS1Barcode.xcodeproj` file into your Xcode project.
+You can add the project as a git `submodule`. Simply drag the `SwiftDebouncer.xcodeproj` file into your Xcode project.
 **Don't forget to add the framework in your application target**
 
 ### Manually
